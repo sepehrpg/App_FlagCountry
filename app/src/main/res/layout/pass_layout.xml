@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:layout_weight="1"
+        >
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="پسورد خود را وارد کنید"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:gravity="right"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imgPass"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_visibility"
+        android:layout_gravity="center_vertical"
+        />
+
+</LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnPassVorord"
+        android:layout_marginTop="40dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape22_splash"
+        android:text="ورود"
+        android:textSize="30sp"
+        >
+
+    </Button>
+
+</LinearLayout>

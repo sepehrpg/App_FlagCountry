@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="ارتباط با ما"
+        android:icon="@drawable/ic_person"
+        android:id="@+id/person"/>
+
+    <item
+        android:title="تــنظیمات"
+        android:icon="@drawable/ic_settings"
+        android:id="@+id/settings"/>
+
+    <item
+        android:title="خانه"
+        android:icon="@drawable/ic_home"
+        android:id="@+id/home"/>
+
+
+</menu>

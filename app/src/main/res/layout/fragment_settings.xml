@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp"
+
+        >
+
+        <LinearLayout
+            android:background="@drawable/shape1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="سایز فونت برنامه"
+                android:textColor="#000"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:padding="7dp"
+                />
+
+            <com.rey.material.widget.Slider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:sl_value="20"
+                app:sl_maxValue="40"
+                app:sl_minValue="18"
+                app:sl_primaryColor="#055F0A"
+                app:sl_secondaryColor="#59C05E"
+                android:id="@+id/slider"
+                app:sl_discreteMode="true"
+                />
+
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="نمونه"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:id="@+id/Nemone"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp"
+
+        >
+
+        <LinearLayout
+            android:background="@drawable/shape1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="نمونه"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:padding="7dp"
+                    android:layout_weight="0.5"
+                    android:id="@+id/nemonefount"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.5"
+                    android:text="انتخاب قلم"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:padding="7dp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <RadioButton
+                    android:id="@+id/Pishfarz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="پیش فرض"
+                    android:padding="5dp"
+                    />
+                <RadioButton
+                    android:id="@+id/nasim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text=" نسیم "
+                    android:padding="5dp"
+
+                    />
+                <RadioButton
+                    android:id="@+id/bardia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text=" بردیا "
+                    android:padding="5dp"
+                    />
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape1"
+        >
+
+        <Switch
+            android:id="@+id/swichBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="گذاشتن پسورد برای برنامه "
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_margin="13dp"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardViewGone"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp"
+        android:visibility="gone"
+
+        >
+
+        <LinearLayout
+            android:background="@drawable/shape1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+            <EditText
+                android:id="@+id/edtMakePass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="پسورد خود را وارد کنید"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:textColor="#000"
+                />
+
+            <Button
+                android:id="@+id/btnOkMakePass"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape22_splash"
+                android:text="تایید"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="برای اعمال تنظیمات یک بار از برنامه خارج و دوباره وارد شوید"
+            android:gravity="center"
+
+            />
+        <Button
+            android:id="@+id/finishApp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="خروج از برنامه "
+            android:background="@drawable/shape22_splash"
+            />
+
+
+
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
